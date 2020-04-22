@@ -11,7 +11,17 @@ body {
     padding-left: $sidebar-base-width;
   }
 }
-
+@media (max-width: 550px) {
+  .tech-used {
+    overflow: hidden !important;
+    overflow-x: scroll !important;
+  }
+}
+.bottom-social-links {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
 .hr {
   max-width: 300px;
   margin: 50px auto;
@@ -25,6 +35,28 @@ body {
   text-align: center;
   h1 {
     padding: 1%;
+  }
+}
+.tech-used {
+  padding: 6% 0%;
+  overflow: hidden;
+  overflow-x: hidden;
+  span {
+    cursor: pointer;
+    border: solid 1px red;
+    border: solid 1px red;
+    padding: 1px 5px;
+    color: red;
+    font-weight: 900;
+    margin: 5px;
+    letter-spacing: 1px;
+  }
+  span:active, span:hover {
+    background-color: red;
+    color: white;
+  }
+  span::before {
+    content: "#";
   }
 }
 
@@ -59,7 +91,10 @@ p.lead {
 }
 
 .subheading {
-  text-transform: uppercase;
+  a {
+    color: #808080f5;
+  }
+  // text-transform: uppercase;
   font-weight: 500;
   @include heading-font;
   font-size: 1.5rem;

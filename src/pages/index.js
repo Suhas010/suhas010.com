@@ -5,6 +5,28 @@ import Layout from '../components/Layout';
 // import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
+console.log(config.experiance)
+const getExperince = () => config.experiance.map(({name, link, position, duration, description, stack}) => (
+  <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+  <div className="resume-content">
+    <h3 className="mb-0">{position}</h3>
+    <div className="subheading mb-3">
+      <a href={link} target="_blank">
+        {name}
+      </a>
+    </div>
+    <p>
+     {description}
+    </p>
+    <div className="tech-used">
+      {stack.map(t => <span>{t}</span>)}
+    </div>
+  </div>
+  <div className="resume-date text-md-right">
+    <span className="text-primary">{duration}</span>
+  </div>
+</div>
+))
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -26,7 +48,7 @@ const IndexPage = () => (
           </div> */}
           <hr className="small hr" />
           <p className="lead mb-5">
-            Front-End Engineer with 3+ years' of experience in crafting products and software for various domains like Media, eCommerce
+            Front-End Engineer with 3+ years' of experience in crafting products and software for various domains like Media, eCommerce,
             CRM and Helth Care.<br/>
             I spend most of my free time and weekends on sharpening my skills and learning new skills.
           
@@ -35,7 +57,7 @@ const IndexPage = () => (
             {config.socialLinks.map(social => {
               const { icon, url } = social;
               return (
-                <a key={url} href={url}>
+                <a key={url} href={url} target="_blank">
                   <i className={`fab ${icon}`}></i>
                 </a>
               );
@@ -44,7 +66,7 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <hr className="m-0" />
+      <hr className=" small hr" />
 
       <section
         className="resume-section p-3 p-lg-5 d-flex justify-content-center"
@@ -52,76 +74,11 @@ const IndexPage = () => (
       >
         <div className="w-100">
           <h2 className="mb-5">Experience</h2>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div className="resume-content">
-              <h3 className="mb-0">Software Engineer</h3>
-              <div className="subheading mb-3">Josh Software</div>
-              <p>
-                Working as a ReactJS developer on Media domain and building inhouse monetory,
-                performance management tool for one of the biggest TV Network world wide.
-                Responsible for Desiging pixel perfect and reusable React Components.
-                Improved codebase and architecture and played important role in performance optimisation 
-              </p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">December 2018 - Present</span>
-            </div>
-          </div>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div className="resume-content">
-              <h3 className="mb-0">Web Developer</h3>
-              <div className="subheading mb-3">Coditas Technology</div>
-              <p>
-                Capitalize on low hanging fruit to identify a ballpark value
-                added activity to beta test. Override the digital divide with
-                additional clickthroughs from DevOps. Nanotechnology immersion
-                along the information highway will close the loop on focusing
-                solely on the bottom line.
-              </p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">February 2018 - December 2018</span>
-            </div>
-          </div>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div className="resume-content">
-              <h3 className="mb-0">Junior Software Engineer</h3>
-              <div className="subheading mb-3">Spring Computing Technology</div>
-              <p>
-                Podcasting operational change management inside of workflows to
-                establish a framework. Taking seamless key performance
-                indicators offline to maximise the long tail. Keeping your eye
-                on the ball while performing a deep dive on the start-up
-                mentality to derive convergence on cross-platform integration.
-              </p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary"> June 2017 - February 2018</span>
-            </div>
-          </div>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
-            <div className="resume-content">
-              <h3 className="mb-0">Intern</h3>
-              <div className="subheading mb-3">Spring Computing Technology</div>
-              <p>
-                Collaboratively administrate empowered markets via plug-and-play
-                networks. Dynamically procrastinate B2C users after installed
-                base benefits. Dramatically visualize customer directed
-                convergence without revolutionary ROI.
-              </p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">January 2017 - June 2017</span>
-            </div>
-          </div>
+            {getExperince()}
         </div>
       </section>
 
-      <hr className="m-0" />
+      <hr className=" small hr" />
 
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
@@ -132,30 +89,49 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">University of Colorado Boulder</h3>
-              <div className="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science - Web Development Track</div>
-              <p>GPA: 3.23</p>
+              <h3 className="mb-0">Nowrosjee Wadia Collage</h3>
+              <div className="subheading mb-3">Masters Of Computer Science</div>
+              {/* <p>GPA: </p> */}
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">August 2006 - May 2010</span>
+              <span className="text-primary">June 2015 - December 2016</span>
             </div>
           </div>
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
             <div className="resume-content">
-              <h3 className="mb-0">James Buchanan High School</h3>
-              <div className="subheading mb-3">Technology Magnet Program</div>
-              <p>GPA: 3.56</p>
+              <h3 className="mb-0">Pune University</h3>
+              <div className="subheading mb-3">Bachlor of Computer Science</div>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">August 2002 - May 2006</span>
+              <span className="text-primary">June 2012 - April 2015</span>
             </div>
           </div>
         </div>
       </section>
 
-      <hr className="m-0" />
+      <hr className=" small hr" />
+
+      <section
+        className="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="interests"
+      >
+        <div className="w-100">
+          <h2 className="mb-5">Interests</h2>
+          <p>
+            Apart from being a web developer, I enjoy most of my time being
+            outdoors. I like to go for solo road trips. Whenever I'm not learning anything new or not working on personal projects on weekends I love to go for ride.
+            Sometimes with my gorgeus wife and Sometimes with my friends
+          </p>
+          <p className="mb-0">
+            When forced indoors, I follow a number of sci-fi and fantasy genre
+            movies and television shows, I am an aspiring chef, and I spend a
+            large amount of my free time exploring the latest technology
+            advancements in the front-end web development world.
+          </p>
+        </div>
+      </section>
+      <hr className=" small hr" />
 
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
@@ -169,23 +145,26 @@ const IndexPage = () => (
           </div>
           <ul className="list-inline dev-icons">
             <li className="list-inline-item">
+              <i className="fab fa-react"></i>
+            </li>
+            <li className="list-inline-item">
+              <i className="fab fa-js-square"></i>
+            </li>
+            <li className="list-inline-item">
+              <i className="fab fa-node-js"></i>
+            </li>
+            <li className="list-inline-item">
               <i className="fab fa-html5"></i>
             </li>
             <li className="list-inline-item">
               <i className="fab fa-css3-alt"></i>
             </li>
             <li className="list-inline-item">
-              <i className="fab fa-js-square"></i>
+              <i className="fab fa-python"></i>
             </li>
-            <li className="list-inline-item">
+            {/* <li className="list-inline-item">
               <i className="fab fa-angular"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-react"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-node-js"></i>
-            </li>
+            </li> */}
             <li className="list-inline-item">
               <i className="fab fa-sass"></i>
             </li>
@@ -195,15 +174,19 @@ const IndexPage = () => (
             <li className="list-inline-item">
               <i className="fab fa-wordpress"></i>
             </li>
-            <li className="list-inline-item">
+            {/* <li className="list-inline-item">
               <i className="fab fa-gulp"></i>
             </li>
             <li className="list-inline-item">
               <i className="fab fa-grunt"></i>
-            </li>
+            </li> */}
             <li className="list-inline-item">
               <i className="fab fa-npm"></i>
             </li>
+            <li className="list-inline-item">
+              <i className="fab fa-git"></i>
+            </li>
+            
           </ul>
 
           <div className="subheading mb-3">Workflow</div>
@@ -227,31 +210,7 @@ const IndexPage = () => (
           </ul>
         </div>
       </section>
-
-      <hr className="m-0" />
-
-      <section
-        className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="interests"
-      >
-        <div className="w-100">
-          <h2 className="mb-5">Interests</h2>
-          <p>
-            Apart from being a web developer, I enjoy most of my time being
-            outdoors. In the winter, I am an avid skier and novice ice climber.
-            During the warmer months here in Colorado, I enjoy mountain biking,
-            free climbing, and kayaking.
-          </p>
-          <p className="mb-0">
-            When forced indoors, I follow a number of sci-fi and fantasy genre
-            movies and television shows, I am an aspiring chef, and I spend a
-            large amount of my free time exploring the latest technology
-            advancements in the front-end web development world.
-          </p>
-        </div>
-      </section>
-
-      <hr className="m-0" />
+      <hr className=" small hr" />
 
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
@@ -264,7 +223,7 @@ const IndexPage = () => (
               <i className="fa-li fa fa-certificate  text-warning"></i>
               Freecodecamp -
               <a
-                href="https://www.freecodecamp.org/certification/suhas010/responsive-web-design">
+                href="https://www.freecodecamp.org/certification/suhas010/responsive-web-design" target="_blank">
                   JavaScript Algorithms and Data Structures Cirtification
               </a>
             </li>
@@ -272,33 +231,45 @@ const IndexPage = () => (
               <i className="fa-li fa fa-certificate  text-warning"></i>
               Freecodecamp - 
               <a
-                href="https://www.freecodecamp.org/certification/suhas010/responsive-web-design">
+                href="https://www.freecodecamp.org/certification/suhas010/responsive-web-design" target="_blank">
                 Responsive Web Desiging
               </a>
             </li>
             <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>2<sup>nd</sup>
-              Position in National Level Project Competition Held at M.J Collage Jalgaon, while attending Post Graduation
+              <i className="fa-li fa fa-trophy text-warning"></i>
+              Shortlisted in the top 40 profiles among 8k participants on <a href="https://www.hackerrank.com/" target="_blank">Hackerank</a> in Hiring Competition for <a href="https://www.castsoftware.com/" target="_blank"> Cast Software</a>.
             </li>
             <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>3<sup>rd</sup>
-              Position in National Level Project Competition Held at M.J Collage Jalgaon, while attending Graduation
+              <i className="fa-li fa fa-trophy text-warning"></i>
+              Shortlisted in the top 50 profiles among 3k participants on <a href="https://www.hackerrank.com/" target="_blank">Hackerank</a> in Hiring Competition for <a href="https://www.varian.com/" target="_blank"> Varian medical</a>.
             </li>
             <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>2<sup>nd</sup>
-              Price in Blind Faith Programming Competition
+              <i className="fa-li fa fa-trophy text-warning"></i>2<sup>nd </sup>
+              &nbsp; Position in National Level Project Competition Held at M.J Collage Jalgaon, while attending Post Graduation
             </li>
             <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006
+              <i className="fa-li fa fa-trophy text-warning"></i>3<sup>rd </sup>
+              &nbsp; Position in National Level Project Competition Held at M.J Collage Jalgaon, while attending Graduation
             </li>
             <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005
+              <i className="fa-li fa fa-trophy text-warning"></i>2<sup>nd </sup>
+              &nbsp; Price in Blind Faith Programming Competition
             </li>
           </ul>
         </div>
       </section>
+        <div className="bottom-social-links">
+          <div className="social-icons">
+            {config.socialLinks.map(social => {
+              const { icon, url } = social;
+              return (
+                <a key={url} href={url} target="_blank">
+                  <i className={`fab ${icon}`}></i>
+                </a>
+              );
+            })}
+          </div>
+        </div>
     </div>
   </Layout>
 );
