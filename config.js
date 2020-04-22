@@ -13,11 +13,6 @@ module.exports = {
   // social
   socialLinks: [
     {
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/suhas010',
-    },
-    {
       icon: 'fa-linkedin-in',
       name: 'Linkedin',
       url: 'https://linkedin.com/in/suhas-more/',
@@ -26,6 +21,21 @@ module.exports = {
       icon: 'fa-twitter',
       name: 'Twitter',
       url: 'https://twitter.com/suhas0101',
+    },
+    {
+      icon: 'fa-github',
+      name: 'Github',
+      url: 'https://github.com/suhas010',
+    },
+    {
+      icon: 'fa-codepen',
+      name: 'Codepen',
+      url: "https://codepen.com/suhas010",
+    },
+    {
+      icon: 'fa-medium',
+      name: 'Medium',
+      url: 'https://medium.com/@suhas010',
     },
     {
       icon: 'fa-facebook-f',

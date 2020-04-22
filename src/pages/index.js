@@ -1,11 +1,9 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-
-// import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
-console.log(config.experiance)
+
 const getExperince = () => config.experiance.map(({name, link, position, duration, description, stack}) => (
   <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
   <div className="resume-content">
@@ -26,7 +24,8 @@ const getExperince = () => config.experiance.map(({name, link, position, duratio
     <span className="text-primary">{duration}</span>
   </div>
 </div>
-))
+));
+
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -47,11 +46,19 @@ const IndexPage = () => (
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div> */}
           <hr className="small hr" />
-          <p className="lead mb-5">
-            Front-End Engineer with 3+ years' of experience in crafting products and software for various domains like Media, eCommerce,
-            CRM and Helth Care.<br/>
-            I spend most of my free time and weekends on sharpening my skills and learning new skills.
+          <p className="lead mb-5" style={{ textAlign: "start" }}>
+          Front-End Engineer with 3+ years of experience in crafting 
+          products and software for various domains like Media, eCommerce,
+          CRM, and Helth Care and now working on the Media and Infotainment domain.
           
+          <br/><br/>
+          I love to keep myself up to date in terms of tech and I do that by
+          attending meetups, reading open-sourced code, and spend my free time
+          reading tech blogs.
+          
+          <br/><br/>
+          <blockquote>I believe sharing knowledge is the only way to improve the depth of
+          knowledge. I tweet and write blogs often whenever I get time.</blockquote>
           </p>
           <div className="social-icons">
             {config.socialLinks.map(social => {
