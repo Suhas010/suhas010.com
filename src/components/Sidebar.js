@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
 
-import avatar from '../assets/images/suhas-more.jpeg';
+import avatar from '../assets/images/suhas-more.jpg';
 import config from '../../config';
 
 export class Sidebar extends Component {
@@ -35,7 +35,7 @@ export class Sidebar extends Component {
             <img
               className="img-fluid img-profile rounded-circle mx-auto mb-2"
               src={avatar}
-              alt=""
+              alt="Suhas More profile picture"
             />
           </span>
         </a>

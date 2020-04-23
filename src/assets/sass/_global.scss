@@ -106,18 +106,21 @@ p.lead {
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: $gray-700;
-    color: $white !important;
+    background-color: #49505700;
+    color: #080707;
     border-radius: 100%;
     text-align: center;
-    font-size: 1.5rem;
-    line-height: 3.5rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
     margin-right: 1rem;
     &:last-child {
       margin-right: 0;
     }
     &:hover {
       background-color: $primary;
+      color: white;
+      font-size: 2rem;
+
     }
   }
 }
