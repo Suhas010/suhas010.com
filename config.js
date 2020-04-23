@@ -7,7 +7,7 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/favicon.png',
-  pathPrefix: `suhas-more-portfolio`,
+  pathPrefix: `/`,
   firstName: 'Suhas ',
   lastName: ' More',
   // social
