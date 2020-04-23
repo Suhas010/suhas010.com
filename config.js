@@ -8,7 +8,7 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/favicon.png',
   pathPrefix: `/`,
-  firstName: 'Suhas ',
+  firstName: 'Suhas s',
   lastName: ' More',
   // social
   socialLinks: [
