@@ -69,6 +69,11 @@ export class Sidebar extends Component {
                 </li>
               );
             })}
+            <li className="nav-item" key="https://blog.suhas010.com">
+                  <a className="nav-link" href="https://blog.suhas010.com" target="_blank">
+                    Blog
+                  </a>            
+            </li>
           </Scrollspy>
         </div>
       </nav>
