@@ -116,28 +116,6 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
-
-      <hr className=" small hr" />
-
-      <section
-        className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="interests"
-      >
-        <div className="w-100">
-          <h2 className="mb-5">Interests</h2>
-          <p>
-            Apart from being a web developer, I enjoy most of my time being
-            outdoors. I like to go for solo road trips. Whenever I'm not learning anything new or not working on personal projects on weekends I love to go for ride.
-            Sometimes with my gorgeus wife and Sometimes with my friends
-          </p>
-          <p className="mb-0">
-            When forced indoors, I follow a number of sci-fi and fantasy genre
-            movies and television shows, I am an aspiring chef, and I spend a
-            large amount of my free time exploring the latest technology
-            advancements in the front-end web development world.
-          </p>
-        </div>
-      </section>
       <hr className=" small hr" />
 
       <section
@@ -217,6 +195,28 @@ const IndexPage = () => (
           </ul>
         </div>
       </section>
+      <hr className=" small hr" />
+
+      <section
+        className="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="interests"
+      >
+        <div className="w-100">
+          <h2 className="mb-5">Interests</h2>
+          <p>
+            Apart from being a web developer, I enjoy most of my time being
+            outdoors. I like to go for solo road trips. Whenever I'm not learning anything new or not working on personal projects on weekends I love to go for ride.
+            Sometimes with my gorgeus wife and Sometimes with my friends
+          </p>
+          <p className="mb-0">
+            When forced indoors, I follow a number of sci-fi and fantasy genre
+            movies and television shows, I am an aspiring chef, and I spend a
+            large amount of my free time exploring the latest technology
+            advancements in the front-end web development world.
+          </p>
+        </div>
+      </section>
+   
       <hr className=" small hr" />
 
       <section
