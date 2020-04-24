@@ -74,7 +74,7 @@ export class Sidebar extends Component {
               );
             })}
             <li className="nav-item" key="https://blog.suhas010.com">
-              <a className="nav-link" href="https://blog.suhas010.com" target="_blank">
+              <a className="nav-link" href="https://blog.suhas010.com" target="_blank" rel="noopener noreferrer">
                 Blog
               </a>            
             </li>

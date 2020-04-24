@@ -9,7 +9,7 @@ const getExperince = () => config.experiance.map(({name, link, position, duratio
   <div className="resume-content">
     <h3 className="mb-0">{position}</h3>
     <div className="subheading mb-3">
-      <a href={link} target="_blank">
+      <a href={link} target="_blank" rel="noopener noreferrer">
         {name}
       </a>
     </div>
@@ -65,7 +65,7 @@ const IndexPage = () => (
             {config.socialLinks.map(social => {
               const { icon, url } = social;
               return (
-                <a key={url} href={url} target="_blank">
+                <a key={url} href={url} target="_blank" rel="noopener noreferrer">
                   <i className={`fab ${icon}`}></i>
                 </a>
               );
@@ -231,7 +231,7 @@ const IndexPage = () => (
               <i className="fa-li fa fa-certificate  text-warning"></i>
               Freecodecamp -
               <a
-                href="https://www.freecodecamp.org/certification/suhas010/responsive-web-design" target="_blank">
+                href="https://www.freecodecamp.org/certification/suhas010/responsive-web-design" target="_blank" rel="noopener noreferrer">
                   JavaScript Algorithms and Data Structures Cirtification
               </a>
             </li>
@@ -239,17 +239,17 @@ const IndexPage = () => (
               <i className="fa-li fa fa-certificate  text-warning"></i>
               Freecodecamp - 
               <a
-                href="https://www.freecodecamp.org/certification/suhas010/responsive-web-design" target="_blank">
+                href="https://www.freecodecamp.org/certification/suhas010/responsive-web-design" target="_blank" rel="noopener noreferrer">
                 Responsive Web Desiging
               </a>
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              Shortlisted in the top 40 profiles among 8k participants on <a href="https://www.hackerrank.com/" target="_blank">Hackerank</a> in Hiring Competition for <a href="https://www.castsoftware.com/" target="_blank"> Cast Software</a>.
+              Shortlisted in the top 40 profiles among 8k participants on <a href="https://www.hackerrank.com/" target="_blank" rel="noopener noreferrer">Hackerank</a> in Hiring Competition for <a href="https://www.castsoftware.com/" target="_blank" rel="noopener noreferrer"> Cast Software</a>.
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              Shortlisted in the top 50 profiles among 3k participants on <a href="https://www.hackerrank.com/" target="_blank">Hackerank</a> in Hiring Competition for <a href="https://www.varian.com/" target="_blank"> Varian medical</a>.
+              Shortlisted in the top 50 profiles among 3k participants on <a href="https://www.hackerrank.com/" target="_blank" rel="noopener noreferrer">Hackerank</a> in Hiring Competition for <a href="https://www.varian.com/" target="_blank" rel="noopener noreferrer"> Varian medical</a>.
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>2<sup>nd </sup>
@@ -271,7 +271,7 @@ const IndexPage = () => (
             {config.socialLinks.map(social => {
               const { icon, url } = social;
               return (
-                <a key={url} href={url} target="_blank">
+                <a key={url} href={url} target="_blank" rel="noopener noreferrer">
                   <i className={`fab ${icon}`}></i>
                 </a>
               );
