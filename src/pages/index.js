@@ -10,7 +10,7 @@ const getExperince = () => config.experiance.map(({name, link, position, duratio
     <h3 className="mb-0">{position}</h3>
     <div className="subheading mb-3">
       <a href={link} target="_blank" rel="noopener noreferrer">
-        {name}
+       -> {name}
       </a>
     </div>
     <p>
