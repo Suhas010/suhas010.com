@@ -47,18 +47,19 @@ const IndexPage = () => (
           </div> */}
           <hr className="small hr" />
           <p className="lead mb-5" style={{ textAlign: "start" }}>
-          Front-End Engineer with 3+ years of experience in crafting 
-          products and software for various domains like Media, eCommerce,
-          CRM, and Helth Care and now working on the Media and Infotainment domain.
-          
-          <br/><br/>
-          I love to keep myself up to date in terms of tech and I do that by
-          attending meetups, reading open-sourced code, and spend my free time
-          reading tech blogs.
-          
-          <br/><br/>
-          <blockquote>I believe sharing knowledge is the only way to improve the depth of
-          knowledge. I tweet and write blogs often whenever I get time.</blockquote>
+            Front-End Engineer with 3+ years of experience in crafting 
+            products and software for various domains like Media, eCommerce,
+            CRM, and Helth Care and now working on the Media and Infotainment domain.
+            
+            <br/><br/>
+            I believe sharing knowledge is the only way to improve the depth of
+            knowledge. I tweet and write blogs often whenever I get time.
+        
+            <br/><br/>
+            I love to keep myself up to date in terms of tech and I do that by
+            attending meetups, reading open-sourced code, and spend my free time
+            reading tech blogs.
+        
           </p>
           <div className="social-icons">
             {config.socialLinks.map(social => {

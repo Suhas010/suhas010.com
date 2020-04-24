@@ -17,6 +17,7 @@ export class Sidebar extends Component {
         { content: 'Interests', href: 'interests' },
         { content: 'Awards', href: 'awards' },
       ],
+      toggle: false
     };
   }
 
@@ -47,10 +48,13 @@ export class Sidebar extends Component {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => this.setState(({ toggle }) => ({
+            toggle: !toggle
+          }))}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className={!this.state.toggle ? "collapse navbar-collapse" : "navbar-collapse"} id="navbarSupportedContent">
           <Scrollspy
             items={tabs.map(s => s.href)}
             currentClassName="active"
@@ -70,9 +74,9 @@ export class Sidebar extends Component {
               );
             })}
             <li className="nav-item" key="https://blog.suhas010.com">
-                  <a className="nav-link" href="https://blog.suhas010.com" target="_blank">
-                    Blog
-                  </a>            
+              <a className="nav-link" href="https://blog.suhas010.com" target="_blank">
+                Blog
+              </a>            
             </li>
           </Scrollspy>
         </div>
