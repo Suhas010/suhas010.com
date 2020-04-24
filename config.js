@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: 'Suhas More',
-  manifestName: 'Resume',
+  manifestName: 'Suhas More',
   manifestShortName: 'Landing',
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
