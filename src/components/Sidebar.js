@@ -78,6 +78,11 @@ export class Sidebar extends Component {
                 Blog
               </a>            
             </li>
+            <li className="nav-item" key="https://drive.google.com/drive/folders/1GjXAjds3SA8-WsYMkT3wDWCJp01RALfM">
+              <a className="nav-link" href="https://drive.google.com/drive/folders/1GjXAjds3SA8-WsYMkT3wDWCJp01RALfM" target="_blank" rel="noopener noreferrer">
+              Certificates
+              </a>
+            </li>
           </Scrollspy>
         </div>
       </nav>
