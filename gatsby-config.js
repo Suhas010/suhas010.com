@@ -4,9 +4,9 @@ const config = require('./config');
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: "Suhas More Personal Portfolio - suhas010.cocm",
+    title: "Suhas More — Personal Portfolio, ReactJS, JavaScript Developer",
     titleTemplate: "Suhas More Personal Portfolio - suhas010.com",
-    description:`Hello world, I am Suhas More front-end developer
+    description:`Hello world, I am Suhas More ReactJS, JavaScript engineer
       and JS enthusiastic. Check out my portfolio and insightful blog
       post I wrote on ReactJS, JavaScript, and on web development in general.`,
     url: "https://www.suhas010.com", // No trailing slash allowed!
