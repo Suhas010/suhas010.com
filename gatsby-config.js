@@ -1,9 +1,17 @@
 const config = require('./config');
+// const avatar = require('./src/assets/images/suhas-more.jpg');
 
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: config.siteTitle,
+    title: "Suhas More Personal Portfolio - suhas010.cocm",
+    titleTemplate: "Suhas More Personal Portfolio - suhas010.com",
+    description:`Hello world, I am Suhas More front-end developer
+      and JS enthusiastic. Check out my portfolio and insightful blog
+      post I wrote on ReactJS, JavaScript, and on web development in general.`,
+    url: "https://www.suhas010.com", // No trailing slash allowed!
+    image: "/src/assets/images/suhas-more.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@suhas0101",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
