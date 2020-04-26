@@ -97,7 +97,7 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Nowrosjee Wadia Collage</h3>
+              <h3 className="mb-0">Nowrosjee Wadia College</h3>
               <div className="subheading mb-3">Masters Of Computer Science</div>
               {/* <p>GPA: </p> */}
             </div>
@@ -109,7 +109,7 @@ const IndexPage = () => (
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
             <div className="resume-content">
               <h3 className="mb-0">Pune University</h3>
-              <div className="subheading mb-3">Bachlor of Computer Science</div>
+              <div className="subheading mb-3">Bachelor of Computer Science</div>
             </div>
             <div className="resume-date text-md-right">
               <span className="text-primary">June 2012 - April 2015</span>
@@ -253,11 +253,11 @@ const IndexPage = () => (
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>2<sup>nd </sup>
-              &nbsp; Position in National Level Project Competition Held at M.J Collage Jalgaon, while attending Post Graduation
+              &nbsp; Position in National Level Project Competition Held at M.J College Jalgaon, while attending Post Graduation
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>3<sup>rd </sup>
-              &nbsp; Position in National Level Project Competition Held at M.J Collage Jalgaon, while attending Graduation
+              &nbsp; Position in National Level Project Competition Held at M.J College Jalgaon, while attending Graduation
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>2<sup>nd </sup>
