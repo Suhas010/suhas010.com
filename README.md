@@ -1,6 +1,6 @@
 # Resume
 
-(see it in action)[https://suhas010.com/resume]
+(see it in action)[https://suhas010.com]
 
 # gatsby-starter-resume
 
