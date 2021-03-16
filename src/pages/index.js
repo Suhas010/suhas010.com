@@ -47,7 +47,7 @@ const IndexPage = () => (
           </div> */}
           <hr className="small hr" />
           <p className="lead mb-5" style={{ textAlign: "start" }}>
-            Front-End Engineer with 3+ years of experience in crafting 
+            Front-End Engineer with 4+ years of experience in crafting 
             products and software for various domains like Media, eCommerce,
             CRM, and Helth Care and now working on the Media and Infotainment domain.
             
